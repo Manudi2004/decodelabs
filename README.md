@@ -1,2 +1,2 @@
 # decodelabs
-Data Analytics Tnternship program at Decode Labs 
+Data Analytics Internship program at Decode Labs 
