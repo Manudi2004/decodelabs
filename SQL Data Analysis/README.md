@@ -8,16 +8,17 @@ aggregated business insights.
 
 ## Repository Structure
 ```
-Project3_SQL/
-├── sql_analysis.py        # Colab script: loads data into SQLite, runs all queries
-├── queries.sql             # Standalone SQL file (all 10 queries)
-├── key_observations.md     # Business-facing summary of findings
-└── README.md                # This file
+SQL Data Analysis/
+├── task_03.py                       # Colab script: loads data into SQLite, runs all queries
+├── queries.sql                       # Standalone SQL file (all 10 queries)
+├── Key Observations.docx             # Business-facing summary of findings
+├── Dataset for Data Analytics.xlsx   # Source dataset
+└── README.md                          # This file
 ```
 
 ## How to Run
-1. Open Google Colab, upload `Dataset_for_Data_Analytics.xlsx`.
-2. Upload and run `sql_analysis.py` (or paste into a notebook cell).
+1. Open Google Colab, upload `Dataset for Data Analytics.xlsx`.
+2. Upload and run `task_03.py` (or paste into a notebook cell).
 3. The script loads the dataset into an in-memory SQLite table called
    `orders` and prints the result of each query.
 4. `queries.sql` can also be run directly against any SQL engine once the
@@ -32,7 +33,7 @@ Project3_SQL/
 - **Percentage contribution:** correlated subqueries to compute each
   group's share of the overall total.
 
-## Key Findings (full detail in `key_observations.md`)
+## Key Findings (full detail in `Key Observations.docx`)
 - **41.4% of orders are Cancelled or Returned** — confirmed independently
   via SQL aggregation, consistent with the Project 2 EDA finding.
 - Instagram and Email are the only referral sources clearing a
