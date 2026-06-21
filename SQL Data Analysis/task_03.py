@@ -131,3 +131,23 @@ for title, query in queries.items():
     print()
 
 conn.close()
+
+from google.colab import files
+uploaded = files.upload()
+
+import sqlite3, pandas as pd
+conn = sqlite3.connect("orders.db")
+
+with open("queries.sql") as f:
+    sql_script = f.read()
+
+for statement in sql_script.split(";"):
+    # strip out comment lines, keep only the actual SQL
+    lines = [line for line in statement.split("\n") if not line.strip().startswith("--")]
+    clean_statement = "\n".join(lines).strip()
+    if clean_statement:
+        try:
+            print(pd.read_sql(clean_statement, conn).to_string(index=False))
+            print()
+        except Exception as e:
+            print(f"Skipped a statement: {e}")
