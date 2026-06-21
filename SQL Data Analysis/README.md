@@ -10,11 +10,11 @@ aggregated business insights.
 
 Repository Structure
 
-Project3_SQL/
-├── sql_analysis.py        # Colab script: loads data into SQLite, runs all queries
+Project3_SQL
+├── sql_analysis.py         # Colab script: loads data into SQLite, runs all queries
 ├── queries.sql             # Standalone SQL file (all 10 queries)
 ├── key_observations.md     # Business-facing summary of findings
-└── README.md                # This file
+└── README.md               # This file
 
 
 
