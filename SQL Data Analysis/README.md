@@ -8,7 +8,7 @@ SQL-based analysis of a 1,200-row e-commerce orders dataset, querying
 directly against a SQLite database to extract filtered, grouped, and
 aggregated business insights.
 
-Repository Structure
+Repository Structure.
 
 Project3_SQL
 ├── sql_analysis.py         # Colab script: loads data into SQLite, runs all queries
