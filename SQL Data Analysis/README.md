@@ -16,15 +16,6 @@ Project3_SQL/
 ├── key_observations.md     # Business-facing summary of findings
 └── README.md                # This file
 
-How to Run
-
-
-Open Google Colab, upload Dataset_for_Data_Analytics.xlsx.
-Upload and run sql_analysis.py (or paste into a notebook cell).
-The script loads the dataset into an in-memory SQLite table called
-orders and prints the result of each query.
-queries.sql can also be run directly against any SQL engine once the
-data is loaded into a table named orders.
 
 
 Methodology
